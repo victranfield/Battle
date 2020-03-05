@@ -52,6 +52,7 @@ class Battle < Sinatra::Base
     # Game.new.attack(@player_2)
     @game = $game
     @game.attack(@game.player_2)
+    @game.switch_turns
     erb :attack
   end
 
